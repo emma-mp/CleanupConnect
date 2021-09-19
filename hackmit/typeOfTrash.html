@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <!-- Custom CSS -->
+        <title>How Much Trash?</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <!-- Logo -->
+        <link rel="icon" href="faviconHACKMIT.png">
+
+        <script>
+            var slider = document.getElementById("myRange");
+            var output = document.getElementById("demo");
+            output.innerHTML = slider.value; // Display the default slider value
+            // var buttonSelected = "none"; // None of the buttons are greyed out
+
+            // Update the current slider value (each time you drag the slider handle)
+            slider.oninput = function() {
+                output.innerHTML = this.value;
+            }
+            function wasteTypeSelect() {
+                var checkBoxLandfill = document.getElementById("landfill");
+                var checkBoxRecycle = document.getElementById("recycling");
+                var checkBoxCompost = document.getElementById("compost");
+                var checkBoxHazard = document.getElementById("hazardousWaste");
+
+                if (checkBoxLandfill.checked == true){
+                    
+                }
+                if (checkBoxRecycle.checked == true){
+                    
+                }
+                if (checkBoxCompost.checked == true){
+                    
+                }
+                if (checkBoxHazard.checked == true){
+                    
+                }
+              //if you clicked one button, the rest get grayed out?
+            }
+
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+        <script src="sketch.js"></script>
+
+    </head>
+    <body>  
+        <div class="indexPage">
+            <div class="container-fluid">
+              <nav class="navbar navbar-default">
+                  <ul class="nav navbar-nav">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="resources.html">Resources</a></li>
+                      <li><a href="about.html">About</a></li>
+                  </ul>
+              </nav>
+        </div>
+       
+        <!-- Logo for the Top Right -->
+        <div class="logoTopRight"> 
+            <object data="CleanupConnectLogo.svg" width="300" height="100"></object>
+        </div>
+
+        <div class="container text-center">
+            <div class="jumbotron header">
+                <h1>What type of trash is there?</h1>
+                <p>
+                    <!-- Checkboxes which -->
+                    <br>
+                    <input type="checkbox" id="landfill" name="landfill">
+                    <label class="landfill" for="landfill">Landfill</label>
+                    <br>
+                    <input type="checkbox" id="recycling" name="recycling">
+                    <label class="recycling" for="recycling">Recycling</label>
+                    <br>
+                    <input type="checkbox" id="compost" name="compost">
+                    <label class="compost" for="compost">Compost</label>
+                    <br>
+                    <input type="checkbox" id="hazardousWaste" name="hazardousWaste">
+                    <label class="hazardousWaste" for="hazardousWaste">Hazardous Waste</label>
+
+
+
+                </p>
+            </div>
+
+            <!-- different buttons for which type of trash user is reporting -->
+            <!-- <button type="button" class="btn btn-success btn-lg" onclick="wasteTypeSelect()">Compost</button> 
+            <button type="button" class="btn btn-primary btn-lg" onclick="wasteTypeSelect()">Recycling</button>
+            <button type="button" class="btn btn-warning btn-lg" onclick="wasteTypeSelect()">Landfill</button>
+            <button type="button" class="btn btn-danger btn-lg" onclick="wasteTypeSelect()">Hazardous Waste</button> -->
+            
+           
+        </div>
+        <div class="text-center" style="width: 100%; font-family: Andale Mono, monospace">
+            <h1>
+                How Much Trash Is There?
+            </h1>
+            <div class="sliderOptions">
+                <div>
+                    <img class="sliderOptionIcon" style="float: left" id="can" src="aCan.jpeg" alt="can">
+                </div>
+                <div>
+                    <img class="sliderOptionIcon" id="trash" src="trashcanicon.jpeg" alt="trash">
+                </div>
+                <div style="text-align: right">
+                    <img class="sliderOptionIcon" id="dumpster" src="dumpsterIcon.jpeg" alt="dumpster">
+                </div>
+            </div>
+            <!-- Slider Code Here -->
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            </div>
+        </div>
+        <!-- Submit Button -->
+        <div class="text-center" style="margin-bottom:20px"> 
+            <button onclick="window.location.href='thankyou.html';" type="submit" class="btn btn-success btn-lg"> Submit </button>
+        </div>
+    </body>
+</html>

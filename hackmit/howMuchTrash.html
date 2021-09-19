@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <!-- Custom CSS -->
+        <title>How Much Trash?</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <!-- Logo -->
+        <link rel="icon" href="faviconHACKMIT.png">
+
+        <script>
+            var slider = document.getElementById("myRange");
+            var output = document.getElementById("demo");
+            output.innerHTML = slider.value; // Display the default slider value
+
+            // Update the current slider value (each time you drag the slider handle)
+            slider.oninput = function() {
+                output.innerHTML = this.value;
+            }
+        </script>
+    </head>
+    <body>  
+        <div class="indexPage">
+            <div class="container-fluid">
+              <nav class="navbar navbar-default">
+                  <ul class="nav navbar-nav">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="resources.html">Resources</a></li>
+                      <li><a href="about.html">About</a></li>
+                  </ul>
+              </nav>
+        </div>
+
+        <!-- Logo for the Top Right -->
+       <div class="logoTopRight"> 
+        <object href="/index.html" data="CleanupConnectLogo.svg" width="300" height="100"> </object>
+        </div>
+
+        <div class="container">
+            <div class="jumbotron header">
+                <h1>How much trash is there?</h1>
+            </div>
+
+            <!-- insert different icons above sliding bar -->
+
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            </div>
+        </div>
+    </body>
+</html>
