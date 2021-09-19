@@ -10,3 +10,7 @@ Contributors:
 - Noah Stiegler (Tufts '25)
 - Rofeeah Ayeni (Tufts '25)
 - Emma Paterson (Tufts '24)
+
+
+To Run:
+Download our code folder onto your computer. Open the index.html file to run! 
