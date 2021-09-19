@@ -6,7 +6,7 @@ A prevalent issue we’ve noticed in our communities is that litter is everywher
 Cleanup Connect was created to help address this problem! Our website allows our users to quickly report trash in their area, specifying the location, type of trash, and quantity
 
 Contributors:
-- Helena Lowe
-- Noah Stiegler
-- Rofeeah Ayeni
-- Emma Paterson
+- Helena Lowe (Tufts '25)
+- Noah Stiegler (Tufts '25)
+- Rofeeah Ayeni (Tufts '25)
+- Emma Paterson (Tufts '24)
